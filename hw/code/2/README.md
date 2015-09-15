@@ -39,7 +39,7 @@ Coding Homework 3.5
 ![alt tag](https://github.com/bhanuanand28/x9115222/blob/master/hw/code/2/ScreenShots/3.5.png)
 
 Coding Homework think4_2
-![alt tag](https://github.com/bhanuanand28/x9115222/blob/master/hw/code/2/think4\_2.png)
+![alt tag](https://github.com/bhanuanand28/x9115222/blob/master/hw/code/2/Think4/_2.png)
 
 Coding Homework think4_3
-![alt tag](https://github.com/bhanuanand28/x9115222/blob/master/hw/code/2/think4\_3.png)
+![alt tag](https://github.com/bhanuanand28/x9115222/blob/master/hw/code/2/Think4/_3.png)

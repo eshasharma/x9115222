@@ -17,6 +17,9 @@ Coding Homework Birthday Paradox
 Coding Homework Employee class
 ![alt tag](https://github.com/bhanuanand28/x9115222/blob/master/hw/code/3/SnapShots/Employee.png)
 
+Coding Homework Poker
+![alt tag](https://github.com/bhanuanand28/x9115222/blob/master/hw/code/3/SnapShots/Pokerhand.png)
+
 
 
 

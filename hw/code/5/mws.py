@@ -1,7 +1,7 @@
 '''
 Created on Oct 28, 2015
 
-@author: esharma
+
 '''
 import random 
 import sys

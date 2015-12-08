@@ -51,11 +51,28 @@ the lists generated for the three optimisers by passing it to rdivdemo which gen
 quartile range and the 25 %ile , 50 %ile amd 70 % ile values . 
 
 ###Results
- 
+It can be observed from the graphs that DE works best on DTLZ 7 with 2 objectives followeed by SA, followed by MWS . In the graph we can 
+observe that Inter Quartile Range for DE is the best . This means that since the rdivdemo was run on loss values between inital and 
+final era , This sugests that DE produces the maximum difference between the first and last era. The loss improves from  0.85 to 1.00 
+between the 25th and the 75th quartile , which shows that DE produces diverse results . 
 
 
 ###Threats to Validity 
+1. We ran the code only for 20 iterations . Running the code for a larger number of iterations may produce better statitics. 
+2. We used the loss value between generations to compute the graph . We could have used hypervolume or any other machinery to do this 
+comparison as well and based our results on the aggreagation of those results . 
+3. We used weights 1 for both objectives in the aggegation function . This could be evaluated with some other weights assigned 
+as well. 
+4. The inner loop in each optimiser was run just 1000 times , This could have been run more number of times . 
+5. The value of 0.56 seemed to be large . 
+
 
 ###Future Work 
+1. The code could be run for more number of iterations. 
+2. We could use hypervolume etc to generate more than 1 graph and affirm the results across these graphs . 
+3. The inner loop could be run more than 1000 times . 
+4. The weights could have been assigned by inputting the weights to an optimiser and deciding which produces best optimisation and 
+tuning our optimizer based on that . 
+
 
 

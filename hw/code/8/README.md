@@ -22,13 +22,13 @@ To compare which out of DE, MWS and SA optimises DTLZ7 with 2 objectives and 10 
 
 ###Type 1 , Type 2 , Type 3 Operators
 When we are comparing the functioning of two optimisers , we utilise three comparison operators : 
-1.  *Type 1 operator*: This operator is used to decide which amongst two candidates generates a better solution for DTLZ 7 . The 
-DTLZ 7 has 2 objectives and we need to compare if a candidate is better than a second candidtae on both these objectives. The 
-Type 1 operator should take the minimum time to compute . 
-2. *Type 2 operator* : This operator is used to decide whether ir not there is a significant improvement between two eras generated
-by an optimizer. It is used for early termination as well . If there is significant improvement we continue on with the next generation
-, else we terminate the current generation . 
-3. *Type 3 operator*: This operator is used to decide which of the three optimizers is best for the given problem being optimized. 
+  1.  *Type 1 operator*: This operator is used to decide which amongst two candidates generates a better solution for DTLZ 7 . The 
+       DTLZ 7 has 2 objectives and we need to compare if a candidate is better than a second candidtae on both these objectives. The 
+       Type 1 operator should take the minimum time to compute . 
+  2.   *Type 2 operator* : This operator is used to decide whether ir not there is a significant improvement between two eras generated
+        by an optimizer. It is used for early termination as well . If there is significant improvement we continue on with the next generation
+        , else we terminate the current generation . 
+  3.   *Type 3 operator*: This operator is used to decide which of the three optimizers is best for the given problem being optimized. 
 
 ###Implementation 
 We applied the Type 1 and Type 2 operators to our code for SA, MWS and DE and compared the loss values between consequent generations

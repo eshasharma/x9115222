@@ -73,6 +73,8 @@ as well.
 3. The inner loop could be run more than 1000 times . 
 4. The weights could have been assigned by inputting the weights to an optimiser and deciding which produces best optimisation and 
 tuning our optimizer based on that . 
+5. We could use the value of 0.56 and tune our optimiser to that. 
+6. We could tun this for other optimisers like GA and see where DE stands in comparison.
 
 
 

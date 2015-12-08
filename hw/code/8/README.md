@@ -40,6 +40,12 @@ We applied the Type 1 and Type 2 operators to our code for SA, MWS and DE and co
 
 ###Results
 
+rank ,                   name ,                     med   ,                  iqr 
+----------------------------------------------------
+   1 ,  differentialEvolution ,    0.90  ,  0.14 (              -|---*-----     ), 0.85,  0.91,  0.99
+   2 ,     simulatedannealing ,    0.99  ,  0.01 (               |         *    ), 0.98,  0.99,  1.00
+   3 ,             maxwalksat ,    1.00  ,  0.01 (               |          *   ), 1.00,  1.00,  1.00
+
 ###Threats to Validity 
 
 ###Future Work 

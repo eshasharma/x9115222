@@ -1,6 +1,14 @@
 # x9115222
 ##Coding up the Type 1 , 2 , 3 Comparison Operators and Using them to Compare DE, SA and MWS 
 
+#####Group Members:
+
+- Esha Sharma 
+
+- Bhanu Anand
+
+- Vinay Togalde
+
 ### Running Instructions 
 
 ###Abstract
@@ -36,4 +44,4 @@ We applied the Type 1 and Type 2 operators to our code for SA, MWS and DE and co
 
 ###Future Work 
 
-### Running Instructions 
+

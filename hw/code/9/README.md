@@ -12,7 +12,7 @@ Contributors:-
 
 _____________________________________________________________________________________________________________________________
 
-##Coding up the Gentic Algorithm 
+##Coding up the Gentic Algorithm and applying it to  DTLZ 1 , 3, 5 , 7 each time with 2,4,6,8 objectives and 10, 20 , 40 decisions
 
 ### Running Instructions 
   1. Clone the github repository x9115222 from git@github.com:bhanuanand28/x9115222.git
@@ -20,16 +20,18 @@ ________________________________________________________________________________
   3. run testGA.py
  
 ###Abstract
-We have implemented a genetic algorithm . The genetic algorithm is then run on DTLZ 1 , 3, 5 , 7 each time with 2,4,6,8 objectives 
-and 10, 20 , 40 decisions. We run this model using the default parameters specified . The analysis of the Genetic Algorithm on 
-different variations of DTLZ is done using the hypervolume. We then plot the hypervolume for different objectives and decisions and 
+In this study, we have implemented a genetic algorithm .This genetic algorithm is run on each of DTLZ 1 , 3, 5 , 7 each time with
+2,4,6,8 objectives and each of 10, 20 , 40 decisions. We run this model using the default parameters without tuning those. The analysis
+of the application and performance of the Genetic Algorithm on different variations of DTLZ is done using the hypervolume function. 
+We measure the hypervolume for 20 iterations . We have then plotted the hypervoume using an excel spreadsheet. Through this experiment, 
+we learnt that the Genetic Algorithm performs best on We then plot the hypervolume for different objectives and decisions and 
 check the performance on different models . We run this 20 times on each . We found that . 
 
-###Objective
+###Introduction and Background
 To implement a Genetic Algorithm and run it on TLZ 1 , 3, 5 , 7 each time with 2,4,6,8 objectives and 10, 20 , 40 decisions.To 
 check and compare the performance of the Genetic Algorithm on the different parameters passed. 
-
-###Genetic Algorithm used 
+###Type 1 , Type 2 , Type 3 Comparison Operators
+###Genetic Algorithm used ###Implementation 
 Genetic algorithms are optimization algorithms which mimics the process of natural selection . In this program we did not used 
 the following algorithm which we implemented: 
 1. Generate the pareto frontier initially . 
@@ -62,7 +64,7 @@ the following algorithm which we implemented:
 
 
 It can be observed from the graphs that GA works best on
-
+###Conclusions
 
 ###Threats to Validity 
 1. We ran the code only for 20 iterations . Running the code for a larger number of iterations may produce better statitics. 
@@ -83,3 +85,13 @@ as well .
  1. [Pseudo-code for Genetic Algorithm](http://www.cleveralgorithms.com/nature-inspired/evolution/genetic_algorithm.html)
  
  2. [Hypervolume Calculator](https://github.com/ai-se/storm/tree/master/PerformanceMetrics) 
+ 3. 
+ ###References
+
+1. https://github.com/txt/mase/blob/master/lessthan.md
+2. https://github.com/txt/mase/blob/master/STATS.md
+
+###Acknowledgements
+
+The study uses code for Scott knott , Loss functions which can be found here: 
+ 1.  https://github.com/txt/mase/blob/master/src/doc/sk.py

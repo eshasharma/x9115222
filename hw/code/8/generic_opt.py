@@ -1,8 +1,4 @@
-'''
-Created on Nov 17, 2015
 
-@author: esharma
-'''
 from sk import *
 from global_variables import *
 import Model

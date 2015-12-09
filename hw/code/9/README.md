@@ -54,20 +54,22 @@ number of generations: 1000 (but have early termination considered every 100 gen
 frontier_distribution=0.8
 
 We implemented this algorithm : 
-1. Generate the initial Pareto Frontier by generating 100 candidates using the candidate function.
-2. Apply Binary Domination to generate Pareto_Best. This contains the best candidates generated via Binary Domination  and takes up n 
-   squared comparisons.
-2. Pareto best From the pareto frontier apply Binary domination and select parents . The number pf perants selected here will be betwen 3 to 4. 
-3. Create children from the parent population using crossover . Crossover is done only when probabality condition is met. 
-4. Mutate the childeren with proabality of 5 % . 
-5. Create a new frontier with the children . 
-6. If any child doninates any parent on the pareto best remoce the child and replace with parent . 
-7. We use early termination if no child dominates reduce lives by 1 else continue with the original count of lives . 
-8. Conditons used for Binary Domination : 
-9. Fianl frontier is the best frontier created . 
+  1. Generate the initial Pareto Frontier by generating 100 candidates using the candidate function.
+  2. Apply Binary Domination to generate Pareto_Best. This contains the best candidates generated via Binary Domination  and takes up
+     n squared comparisons to generate.
+  3. From Pareto_best select parents by applying Binary Domination. The number of parents selected here will be between 3 and 4.
+  4. Using the parents generated, create childen by doing crossover. Crossover is done only when the Probabilty condition is met
+  5. Mutate the children generated if the probablity condition for mutation is met . 
+  6. Create a new frontier with the children 
+  7. On the Pareto Frontier , apply Binary Domination and compare with the children's frontier created. 
+  8. On the frontier ,if any child dominates any parent here , replace the parent with the child.
+  9. Continue doing this till the number of generations is completed. 
+  10. Once this is ndone , the pareto frontier generated is the best frontier . 
+  
+We use early termination 7. We use early termination if no child dominates reduce lives by 1 else continue with
+the original count of lives . 
 
-###Implementation 
-1. We have implemtent the Genetic Algorithm psuedocode specified above with the following paramters : 
+
 2. To check the efficiency of the Genetic Algorithm we calculate the hypervolume for the model passed . 
 3. Hyervolume measure the 
 

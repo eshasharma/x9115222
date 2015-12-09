@@ -118,6 +118,13 @@ which can be used to decide which of these weights work best for the optimizer i
 the best value is used to decide whether we should do early termination or not. 
 6. We could extend this study to Genetic Algorithms and other optimizers and check where DE stands in comparison.
 
+###References
+1. https://github.com/txt/mase/blob/master/lessthan.md
+2. https://github.com/txt/mase/blob/master/STATS.md
+
+###Acknowledgements
+The study uses code for Scott knott , Loss found here : 
+1. https://github.com/txt/mase/blob/master/src/doc/sk.py
 
 
 

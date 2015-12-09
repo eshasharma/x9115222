@@ -46,8 +46,11 @@ To compare the functioning of two optimisers , we utilise these three comparison
 ###Implementation 
 For this study , we incorporated the Type 1 and Type 2 comparison operators in our Simulated Annealing and MaxWalkSat and Differential
 Evolition . We then used the loss values generated between eras of SA, MWS and DE and passed those to Scott Knott and generated 
-graphs which we compared to judge performance.This is how these three operatore were applied : 
-  1.  *Type 1 operator* : This was used to compare two candidates generated and decide which one was better . This was done in the inner
+graphs which we compared to judge performance of the optimizers.This is how these three operatore were applied : 
+  1.  *Type 1 operator* : This was used to compare two candidates generated through the model in the inner most loop of the optimizers        and decide which between the two was a better candidate. The comparison is done on each of the objectives of the candidates 
+       to judge which one is better than the other. For DTLZ7 the objectives grow in the same direction and do not conflict with 
+       one another , that is increade in one does not imply decrease in the other. Hence we took an aggregation of the objectives 
+       giving each of them a weight of 1 .Applying Boolean or Continous Dowas better . This was done in the inner
        most loop of each optimisers . To compare two candidates we computed the objectives generated for each candidate and aggregated
        them by a simple summation . Since The Type 1 operator should take minimum time to run and also since for DTLZ 7 the objectives 
        do not conflict , doing a summation seemed to be ok .

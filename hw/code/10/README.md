@@ -1,17 +1,24 @@
 # x9115222
-# x9115222
-##Hyper Parameter Optimization 
 
-#####Group Members:
+# Repository for CS 591(Automated Software Engineering)
 
-- Esha Sharma 
+Contributors:-
 
-- Bhanu Anand
+  Bhanu Anand(bhanuanand28)
+  
+  Esha Sharma(eshasharma)
+  
+  Vinay Todalge (vntodalge)
 
-- Vinay Togalde
+_____________________________________________________________________________________________________________________________
+
+##Hyper Parameter Optimization
 
 ### Running Instructions 
-
+  1. Clone the github repository x9115222 from git@github.com:bhanuanand28/x9115222.git
+  2. Navigate to ./x9115222/hw/code/9 
+  3. run testGA.py
+  
 ###Abstract
 When we use Genetic Algorithm to optimise a problem , there are a number of default values which are used in the optimisation . 
 The Genetic Algorithm's extent of optimisation depends on these default parameters . We use DE to find which of these default 

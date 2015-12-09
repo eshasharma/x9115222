@@ -129,7 +129,7 @@ to a significant extent for 8 objectives.Also , this number gets worsened for DT
 ![alt tag](https://github.com/bhanuanand28/x9115222/blob/master/hw/code/10/ScreenShots/DTLZ7.jpg)
 
 It can be observed from the graphs that optimizing the GA through DE produced a significant improvement in the 
-hypervolume values .
+hypervolume values for some of the DTLZ cases but not for all.
 
 ###Conclusions
 We can hence conclude that GA optimizes DE to a significant extent for DTLZ3 and DTLZ5 with 4,6,8 objectives and DTLZ7

@@ -20,20 +20,31 @@ ________________________________________________________________________________
   3. run testGA.py
   
 ###Abstract
-When we use Genetic Algorithm to optimise a problem , there are a number of default values which are used in the optimisation . 
-The Genetic Algorithm's extent of optimisation depends on these default parameters . We use DE to find which of these default 
-values produce best results for optimisation by a GA. We use DE to tune the GA to work most efficiently . We applied DE to tune
-our GAs and ran our GAs on DTLZ 1 , 3, 5 , 7 each time with 2,4,6,8 objectives and 10, 20 , 40 decisions. We analyse the difference
-betwwen the performance of DE on the GAs by comparing the hypervolumes generated. We then plotted the hypervolume values found 
-and analysed the difference between them to see whether or not the performance of the GA is increased because of tuning via DE. 
-We found that 
+In this study we used Differential Evolution(DE) to generate the set of values which decide the extend of mutation ,crossover , 
+the number of candidates and the number if generations that a genetic algorithm(GA) will run. We use DE to tune our default control 
+settings. The DE tunes the GA so that the set of values which performs the most efficiently optimized solution for different 
+DTLZs get generated. We apply DE to tune our GAs which optimise DTLZ 1 , 3, 5 , 7 each time with 2,4,6,8 objectives and 10, 20 
+, 40 decision. We observe that tuning the GA via DE improves the performance of GA. 
 
-###Objective
-To use Differential Evolution to tune a Genetic Algorithm which is run on DTLZ 1 , 3, 5 , 7 each time with 2,4,6,8 objectives 
-and 10, 20 , 40 decisions.To check and compare the performance of the Genetic Algorithm on the different parameters passed and 
-check whether or not tuning via DE improves performance of the optimizer. 
+###Introduction and Background
+When we use Genetic Algorithm to optimise a problem ,there are a number of parameters which decide the extent of mutation ,
+crossover etc. These parameters greatly influence the performance of a GA . In the previous code we used default values for this 
+optimisation. In this study we apply Differential Evolution and generate different sets of default parameter settings. These are 
+then used to run GA on DTLZ 1 , 3, 5 , 7 each time with 2,4,6,8 objectives and 10, 20 , 40 decisions. We analuze the performance 
+of DE on the GAs by comparing the hypervolumes generated before and after the tuning is done.
 
-###Genetic Algorithm and Differential Evolution 
+###Genetic Algorithm 
+A Genetic Algorithm is a optimization algorithm which mimics the process of natural selection. In a genetic algorithm we use selection 
+to generate the best population, we then use mutationa and crosssover with the default probabilty to generate children. The children
+are then compared to the parents to see if the population is getting evolved for better. Like natural selection , this process uses
+crossover, mutation and selection. 
+
+###Differential Evolution 
+Differential evolution (DE) is a method that optimizes a problem by iteratively trying to improve a candidate solution with regard to 
+a given measure of quality. DE optimizes a problem by maintaining a population of candidate solutions and creating new candidate 
+solutions by combining existing ones according to its simple formulae, and then keeping whichever candidate solution has the best 
+score or fitness on the optimization problem at hand. In this way the optimization problem is treated as a black box that merely 
+provides a measure of quality given a candidate solution and the gradient is therefore not needed.
 
 ###Implementation 
 To tune the GA via DE , we created a list of decisions and assigned max and min values to them . We created a range of values within 

@@ -40,7 +40,20 @@ the following algorithm which we implemented:
 3. Hyervolume measure the 
 
 ###Results
-It can be observed from the graphs that GA wokrs best on
+#DTLZ1 -First era vs Final era
+![alt tag](https://github.com/bhanuanand28/x9115222/blob/master/hw/code/9/ScreenShots/DTLZ1.jpg)
+
+#DTLZ3 -First era vs Final era
+![alt tag](https://github.com/bhanuanand28/x9115222/blob/master/hw/code/9/ScreenShots/DTLZ3.jpg)
+
+#DTLZ5 -First era vs Final era
+![alt tag](https://github.com/bhanuanand28/x9115222/blob/master/hw/code/9/ScreenShots/DTLZ5.jpg)
+
+#DTLZ7 -First era vs Final era
+![alt tag](https://github.com/bhanuanand28/x9115222/blob/master/hw/code/9/ScreenShots/DTLZ7.jpg)
+
+
+It can be observed from the graphs that GA works best on
 
 
 ###Threats to Validity 

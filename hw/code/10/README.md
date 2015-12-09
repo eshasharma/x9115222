@@ -51,6 +51,10 @@ frontier_distributon - 0.8
 
 ###Results
 
+####DTLZ1 - before and after optimization
+
+![alt tag](https://github.com/bhanuanand28/x9115222/blob/master/hw/code/10/ScreenShots/DTLZ1.jpg)
+
 ####DTLZ3 - before and after optimization
 
 ![alt tag](https://github.com/bhanuanand28/x9115222/blob/master/hw/code/10/ScreenShots/DTLZ3.jpg)

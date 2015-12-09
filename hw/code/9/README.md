@@ -89,8 +89,8 @@ number 10, 20 , 40 represents the number of decisions.
 ####DTLZ1 -First era and Final era
 Below is the plot for DTLZ1 for the different number of objectives and decisions. We can see that GA works terribly to optimise 
 DLTZ 1 with 6 and 8 objectives and 10,20,40 decisions since the value for hypervolume is less than 1 and is almost touching 
-0.5 in almost all the values. it touches 0 for 8 objectives and 10 decisions and 20 decisions. We have plotted the values for the first and the last run and the 
-results apply to both. 
+0.5 in almost all the values. it touches 0 for 8 objectives and 10 decisions . We have plotted the values for the first and the 
+last run and the same results can be observed in both. 
 
 ![alt tag](https://github.com/bhanuanand28/x9115222/blob/master/hw/code/9/ScreenShots/DTLZ1.jpg)
 
@@ -105,24 +105,25 @@ the performance of the optimizer using these values.
 ####DTLZ5 -First era and Final era
 
 Below is the plot for DTLZ5 for the different number of objectives and decisions. We can see that GA works terribly to optimise 
-DLTZ 5 with 6,8 objectives and 10,20 decisions since the value for hypervolume is less than 1 in almost touching 0 in both the plots.
-The performance is the worst for 10,20 decisions and 8 objectives.
+DLTZ 5 with 4,6,8 objectives and 10,20,40 decisions since the value for hypervolume is less than 1 in almost touching 0 in both
+the plots. The performance is the worst for 10,20,40 decisions and 8 objectives.
 
 ![alt tag](https://github.com/bhanuanand28/x9115222/blob/master/hw/code/9/ScreenShots/DTLZ5.jpg)
 
 ####DTLZ7 -First era and Final era
 
-Below is the plot for DTLZ5 for the different number of objectives and decisions. We can see that GA works terribly to optimise 
-DLTZ 5 with 6,8 objectives and 10,20 decisions since the value for hypervolume is less than 1 in almost touching 0 in both the plots.
-The performance is the worst for 10,20 decisions and 8 objectives.
+Below is the plot for DTLZ7 for the different number of objectives and decisions. We can see that GA works very well to optimise 
+DLTZ 7 with 4,6,8 objectives and 10,20,40 decisions since the value for hypervolume is almost 5 for all the values. The performance
+is the best for 6 and 8 objectives.
 
 ![alt tag](https://github.com/bhanuanand28/x9115222/blob/master/hw/code/9/ScreenShots/DTLZ7.jpg)
 
-
-It can be observed from the graphs that GA works best on and the worst on as the Hypervolume
+It can be observed from the graphs that GA works best on DTLZ7 with 6,8 objectives and 10,20,40 decisions . We can hence use this
+to optimise these models .
 
 ###Conclusions
-GA optimizes better and performs terribly on 
+GA works best on DTLZ7 with 6,8 objectives and 10,20,40 decisions . 
+GA works worst on DTLZ5 with 20 decisions and DTLZ1 with 6,8 decisions.
 
 ###Threats to Validity 
 1. We ran the code only for 20 iterations . Running the code for a larger number of iterations may produce better statitics. 

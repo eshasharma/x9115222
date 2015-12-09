@@ -24,13 +24,14 @@ In this study we used Differential Evolution(DE) to generate the set of values w
 the number of candidates and the number if generations that a genetic algorithm(GA) will run. We use DE to tune our default control 
 settings. The DE tunes the GA so that the set of values which performs the most efficiently optimized solution for different 
 DTLZs get generated. We apply DE to tune our GAs which optimise DTLZ 1 , 3, 5 , 7 each time with 2,4,6,8 objectives and 10, 20 
-, 40 decision. We observe that tuning the GA via DE improves the performance of GA. 
+, 40 decision. We observe that tuning the GA via DE improves the performance of GA on DTLZ3 and DTLZ5 with 4,6,8 objectives and DTLZ7
+for 8 objectives. 
 
 ###Introduction and Background
 When we use Genetic Algorithm to optimise a problem ,there are a number of parameters which decide the extent of mutation ,
 crossover etc. These parameters greatly influence the performance of a GA . In the previous code we used default values for this 
 optimisation. In this study we apply Differential Evolution and generate different sets of default parameter settings. These are 
-then used to run GA on DTLZ 1 , 3, 5 , 7 each time with 2,4,6,8 objectives and 10, 20 , 40 decisions. We analuze the performance 
+then used to run GA on DTLZ 1 , 3, 5 , 7 each time with 2,4,6,8 objectives and 10, 20 , 40 decisions. We analyze the performance 
 of DE on the GAs by comparing the hypervolumes generated before and after the tuning is done.
 
 ###Genetic Algorithm 
@@ -89,19 +90,41 @@ so as to save on the runninf time.
 
 ###Results
 
+For the different DTLZs with different number of objectives and decisions we have calculated the hypervolume and plotted it here.
+For each DTLZ model the plot can be seen below . The number under the plot represents the number of objectives, while the 
+number 10, 20 , 40 represents the number of decisions. 
+
 ####DTLZ1 - before and after optimization
+
+Below is the plot for DTLZ1 for the different number of objectives and decisions. We can see from the graph that the hypervolume
+numbers are getting reduced . Hence we can conclude that the DE doesn't optimize the GA for DLTZ1 .
 
 ![alt tag](https://github.com/bhanuanand28/x9115222/blob/master/hw/code/10/ScreenShots/DTLZ1.jpg)
 
 ####DTLZ3 - before and after optimization
 
+Below is the plot for DTLZ3 for the different number of objectives and decisions. We can see from the graph that the hypervolume
+numbers are getting improved significantly upto factor of 2 to 3 for 4,6,8 objectives. However this change is not very 
+significant for 2 objectives. Hence we can conclude that the DE optimizes the GA for DLTZ3 with 4,6,8 objectives to a significant
+extent but not for 2 objectives.
+
 ![alt tag](https://github.com/bhanuanand28/x9115222/blob/master/hw/code/10/ScreenShots/DTLZ3.jpg)
 
 ####DTLZ5 - before and after optimization
 
+Below is the plot for DTLZ5 for the different number of objectives and decisions.We can see from the graph that the hypervolume
+numbers are getting improved significantly upto factor of 2 to 3 for 4,6,8 objectives. However this change is not very 
+significant for 2 objectives. Hence we can conclude that the DE optimizes the GA for DLTZ5 with 4,6,8 objectives to a significant
+extent but not for 2 objectives.
+
 ![alt tag](https://github.com/bhanuanand28/x9115222/blob/master/hw/code/10/ScreenShots/DTLZ5.jpg)
 
 ####DTLZ7 - before and after optimization
+
+Below is the plot for DTLZ7 for the different number of objectives and decisions. We can see from the graph that the hypervolume
+numbers are getting improved significantly upto factor of 1 to 1.5 for 8 objectives . For 6 objectives , on an average this number
+gets reduced. While there is no change for 2, 4 objectives .Hence we can conclude that the DE optimizes the GA for DLTZ7
+to a significant extent for 8 objectives.Also , this number gets worsened for DTLZ7 with 2 objectives.
 
 ![alt tag](https://github.com/bhanuanand28/x9115222/blob/master/hw/code/10/ScreenShots/DTLZ7.jpg)
 
@@ -109,19 +132,24 @@ It can be observed from the graphs that optimizing the GA through DE produced a 
 hypervolume values .
 
 ###Conclusions
+We can hence conclude that GA optimizes DE to a significant extent for DTLZ3 and DTLZ5 with 4,6,8 objectives and DTLZ7
+for 8 objectives.
+Tuning with DE worsens optimzation achieved through DE for DTLZ1 and DTLZ7 for 2 objectives. 
 
 ###Threats to Validity 
-1. We ran the code only for 20 iterations . Running the code for a larger number of iterations may produce better statitics. 
-2. We used the Hypervolume between generations to compute the graph . We could have used multiple other tools to calcuate the 
-  efficiency as well . 
-3. We checked only for DTLZ . This could have been checked for multiple models . 
+1. We ran the code only for the given default values for DE. We could run the code for different sets of default values and try to 
+   decide which set of default paramters works the best. 
+2. We use Hypervolume function to measure performance. There are multiple other tools which could be used. The given results might 
+   be skewed because of the use of Hypervolume. 
+3. The range of values for generating candidate solutions for GA's default settings were very narrow. 
+4. The code was run for a very limited number of iterations of both GA and DE because of time constraints.
 
 ###Future Work 
-1. The code could be run for more number of iterations. 
-2. We could use hypervolume etc to generate more than 20 graphs and affirm the results across these graphs . 
-3. We could use functions other than hypervolume etc to compare efficiency. 
-4. We could vary the early termination conditions . 
-5. We could use GA to tune models other than DTLZ and check performance on those . 
+1. The code could be run for more number of iterations for DE and for GA. 
+2. Instead of just using hypervolume , we could also use spread or the loss and compute multiple graphs. Instead on measuring 
+   performance based on just hypervolume , we could base it on all three of the parameters and then conclude results.
+3. The range of values to generate candidate solutions can be made more wide. 
+
 
 ###References:-
 
@@ -130,6 +158,7 @@ hypervolume values .
  3. https://github.com/txt/mase/blob/master/lessthan.md
  4. https://github.com/txt/mase/blob/master/STATS.md
  5. https://en.wikipedia.org/wiki/Genetic_algorithm
+ 6. https://github.com/txt/mase/blob/master/DE.md
 
 
 ###Acknowledgements

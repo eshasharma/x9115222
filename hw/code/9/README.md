@@ -47,7 +47,7 @@ It can be observed from the graphs that GA wokrs best on
 1. We ran the code only for 20 iterations . Running the code for a larger number of iterations may produce better statitics. 
 2. We used the Hypervolume between generations to compute the graph . We could have used multiple other tools to calcuate the efficiency 
 as well . 
-3. We checked only for DTLZ . This could have been checked for multiple models. 
+3. We checked only for DTLZ . This could have been checked for multiple models . 
 
 ###Future Work 
 1. The code could be run for more number of iterations. 

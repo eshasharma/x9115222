@@ -47,11 +47,11 @@ these three operatore were applied :
        median , the inter quartile range and the 25 %ile , 50 %ile amd 70 % ile values . 
 
 ###Results
-
+a=0.56
 ![alt tag](https://github.com/bhanuanand28/x9115222/blob/master/hw/code/8/ScreenShot/Output.jpg)
-
-![alt tag](https://github.com/bhanuanand28/x9115222/blob/master/hw/code/8/ScreenShot/op2.jpg)
-
+a=0.30
+![alt tag](https://github.com/bhanuanand28/x9115222/blob/master/hw/code/8/ScreenShot/op2%20.jpg)
+a=0.65
 ![alt tag](https://github.com/bhanuanand28/x9115222/blob/master/hw/code/8/ScreenShot/op3.jpg)
 
 It can be observed from the graphs that DE works best on DTLZ 7 with 2 objectives followeed by SA, followed by MWS . In the graph we can 

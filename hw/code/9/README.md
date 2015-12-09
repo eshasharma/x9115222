@@ -70,7 +70,8 @@ We have applied early termination condition to our code . If on comparison , we 
 lives by 1 else we continue with the original number of lives.
 
 Once we have generated the final frontier we calculate hypervolume using the code given in 
-[Hypervolume Calculator](https://github.com/ai-se/storm/tree/master/PerformanceMetrics) 
+[Hypervolume Calculator](https://github.com/ai-se/storm/tree/master/PerformanceMetrics) . 
+We normalised the hypervolume so that very big values get eliminated and the comparisons can be performed more efficiently.
   
 The same code is run on  DTLZ 1 , 3, 5 , 7 each time with 2,4,6,8 objectives and 10, 20 , 40 decisions and the Hypervolume 
 generated is compared . 
@@ -126,18 +127,21 @@ GA works best on DTLZ7 with 6,8 objectives and 10,20,40 decisions .
 GA works worst on DTLZ5 with 20 decisions and DTLZ1 with 6,8 decisions.
 
 ###Threats to Validity 
-1. We ran the code only for 20 iterations . Running the code for a larger number of iterations may produce better statitics. 
-2. We used the Hypervolume between generations to compute the graph . We could have used multiple other tools to calcuate the efficiency 
-as well . 
-3. We checked only for DTLZ . This could have been checked for multiple models . 
+1. We ran the code only for the given default values . We could run the code for different sets of default values and try to 
+   decide which set of default paramters works the best. 
+2. There is a discrepancy observed for DTLZ3 with 8 objectives and 20 and 40 decisions.
+3. We use Hypervolume function to measure performance. There are multiple other tools which could be used. The given results might 
+   be skewed because of the use of Hypervolume. 
+4. The early termination condtion may be terminating a loop prematurely when a better candidate could be found.
 
 ###Future Work 
-1. The code could be run for more number of iterations. 
-2. We could use hypervolume etc to generate more than 20 graphs and affirm the results across these graphs . 
-3. We could use functions other than hypervolume etc to compare efficiency. 
-4. We could vary the early termination conditions . 
-5. We could use GA to tune models other than DTLZ and check performance on those . 
-
+1. We could generate multiple instances of the default values and generate the graphs for those and then decide which 
+   set of values work the best. 
+2. Instead of just using hypervolume , we could also use spread or the loss and compute multiple graphs. Instead on measuring 
+   performance based on just hypervolume , we could base it on all three of the parameters and then conclude results.
+3. The early termination condition could be changed to a more lenient one , we could instead terminate when there are two instances
+   of the chid frontier not doing any better. 
+4. GA could be extended to multiple other models and the efficiency of it to optimize other models could be measured as well. 
 
 ###References:-
 
@@ -149,6 +153,7 @@ as well .
 
 ###Acknowledgements
 
-The study uses code for Scott knott , Loss functions ,Hypervolume functions which can be found here: 
- 1.  https://github.com/txt/mase/blob/master/src/doc/sk.py
- 2.  [Hypervolume Calculator](https://github.com/ai-se/storm/tree/master/PerformanceMetrics) 
+   The study uses code found here :
+ 1.  This study uses code for Scott Knott given here : https://github.com/txt/mase/blob/master/src/doc/sk.py
+ 2.  This study used Hypervolume functions given here: 
+     [Hypervolume Calculator](https://github.com/ai-se/storm/tree/master/PerformanceMetrics) 

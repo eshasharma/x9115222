@@ -1,8 +1,4 @@
-'''
-Created on Nov 17, 2015
 
-@author: esharma
-'''
 import Model 
 import math 
 import random 

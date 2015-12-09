@@ -1,4 +1,25 @@
 # x9115222
+
+# Repository for CS 591(Automated Software Engineering)
+
+Contributors:-
+
+  Bhanu Anand(bhanuanand28)
+  
+  Esha Sharma(eshasharma)
+  
+  Vinay Todalge (vntodalge)
+
+_____________________________________________________________________________________________________________________________
+
+##Coding up the Type 1 , 2 , 3 Comparison Operators and Using them to Compare DE, SA and MWS 
+
+### Running Instructions 
+  1. Clone the github repository x9115222 from git@github.com:bhanuanand28/x9115222.git
+  2. Navigate to ./x9115222/hw/code/9 
+  3. run testGA.py
+  
+
 ##Coding up the Gentic Algorithm 
 
 #####Group Members:

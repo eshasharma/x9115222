@@ -64,31 +64,50 @@ We implemented this algorithm :
   7. On the Pareto Frontier , apply Binary Domination and compare with the children's frontier created. 
   8. On the frontier ,if any child dominates any parent here , replace the parent with the child.
   9. Continue doing this till the number of generations is completed. 
-  10. Once this is ndone , the pareto frontier generated is the best frontier . 
+  10. Once this is done , the pareto frontier generated is the best frontier . 
   
-We use early termination 7. We use early termination if no child dominates reduce lives by 1 else continue with
-the original count of lives . 
+We have applied early termination condition to our code . If on comparison , we see that no child dominates we reduce the number of
+lives by 1 else we continue with the original number of lives.
 
+Once we have generated the final frontier we calculate hypervolume using the code given in 
+[Hypervolume Calculator](https://github.com/ai-se/storm/tree/master/PerformanceMetrics) 
+  
+The same code is run on  DTLZ 1 , 3, 5 , 7 each time with 2,4,6,8 objectives and 10, 20 , 40 decisions and the Hypervolume 
+generated is compared . 
 
-2. To check the efficiency of the Genetic Algorithm we calculate the hypervolume for the model passed . 
-3. Hyervolume measure the 
+If the Hypervolume generated is more that means that the frontier is better. 
 
 ###Results
-####DTLZ1 -First era vs Final era
+
+####DTLZ1 -First era and Final era
+
+Here we can see that  
+
 ![alt tag](https://github.com/bhanuanand28/x9115222/blob/master/hw/code/9/ScreenShots/DTLZ1.jpg)
 
-####DTLZ3 -First era vs Final era
+####DTLZ3 -First era and Final era
+
+Here we can see that 
+
 ![alt tag](https://github.com/bhanuanand28/x9115222/blob/master/hw/code/9/ScreenShots/DTLZ3.jpg)
 
-####DTLZ5 -First era vs Final era
+####DTLZ5 -First era and Final era
+
+Here we can see that 
+
 ![alt tag](https://github.com/bhanuanand28/x9115222/blob/master/hw/code/9/ScreenShots/DTLZ5.jpg)
 
-####DTLZ7 -First era vs Final era
+####DTLZ7 -First era and Final era
+
+Here we can see that 
+
 ![alt tag](https://github.com/bhanuanand28/x9115222/blob/master/hw/code/9/ScreenShots/DTLZ7.jpg)
 
 
-It can be observed from the graphs that GA works best on
+It can be observed from the graphs that GA works best on and the worst on as the Hypervolume
+
 ###Conclusions
+GA optimizes better and performs terribly on 
 
 ###Threats to Validity 
 1. We ran the code only for 20 iterations . Running the code for a larger number of iterations may produce better statitics. 
@@ -107,15 +126,13 @@ as well .
 ###References:-
 
  1. [Pseudo-code for Genetic Algorithm](http://www.cleveralgorithms.com/nature-inspired/evolution/genetic_algorithm.html)
- 
- 2. [Hypervolume Calculator](https://github.com/ai-se/storm/tree/master/PerformanceMetrics) 
- 3. 
- ###References
+ 2. Book : Clever Algorithms by Jason Brownlee
+ 3. https://github.com/txt/mase/blob/master/lessthan.md
+ 4. https://github.com/txt/mase/blob/master/STATS.md
 
-1. https://github.com/txt/mase/blob/master/lessthan.md
-2. https://github.com/txt/mase/blob/master/STATS.md
 
 ###Acknowledgements
 
-The study uses code for Scott knott , Loss functions which can be found here: 
+The study uses code for Scott knott , Loss functions ,Hypervolume functions which can be found here: 
  1.  https://github.com/txt/mase/blob/master/src/doc/sk.py
+ 2.  [Hypervolume Calculator](https://github.com/ai-se/storm/tree/master/PerformanceMetrics) 

@@ -12,7 +12,7 @@ Contributors:-
 
 _____________________________________________________________________________________________________________________________
 
-##Coding up the Gentic Algorithm and applying it to  DTLZ 1 , 3, 5 , 7 each time with 2,4,6,8 objectives and 10, 20 , 40 decisions
+##Coding up the Genetic Algorithm and applying it to  DTLZ 1,3,5,7 each time with 2,4,6,8 objectives and 10,20,40 decisions
 
 ### Running Instructions 
   1. Clone the github repository x9115222 from git@github.com:bhanuanand28/x9115222.git
@@ -152,6 +152,7 @@ GA works worst on DTLZ5 with 20 decisions and DTLZ1 with 6,8 decisions.
  2. Book : Clever Algorithms by Jason Brownlee
  3. https://github.com/txt/mase/blob/master/lessthan.md
  4. https://github.com/txt/mase/blob/master/STATS.md
+ 5. https://en.wikipedia.org/wiki/Genetic_algorithm
 
 
 ###Acknowledgements

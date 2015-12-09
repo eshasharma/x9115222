@@ -75,31 +75,46 @@ Once we have generated the final frontier we calculate hypervolume using the cod
 The same code is run on  DTLZ 1 , 3, 5 , 7 each time with 2,4,6,8 objectives and 10, 20 , 40 decisions and the Hypervolume 
 generated is compared . 
 
-If the Hypervolume generated is more that means that the frontier is better. 
+If the Hypervolume generated for a frontier is more this implied that the frontier generated is a good one and the candidates will
+have better values for decisions .
+
+We ran the same for 20 iterations and generated 20 plots and have shown the first and the last plots below.
 
 ###Results
 
-####DTLZ1 -First era and Final era
+For the different DTLZs with different number of objectives and decisions we have calculated the hypervolume and plotted it here.
+For each DTLZ model the plot can be seen below . The number under the plot represents the number of objectives, while the 
+number 10, 20 , 40 represents the number of decisions. 
 
-Here we can see that  
+####DTLZ1 -First era and Final era
+Below is the plot for DTLZ1 for the different number of objectives and decisions. We can see that GA works terribly to optimise 
+DLTZ 1 with 6 and 8 objectives and 10,20,40 decisions since the value for hypervolume is less than 1 and is almost touching 
+0.5 in almost all the values. it touches 0 for 8 objectives and 10 decisions and 20 decisions. We have plotted the values for the first and the last run and the 
+results apply to both. 
 
 ![alt tag](https://github.com/bhanuanand28/x9115222/blob/master/hw/code/9/ScreenShots/DTLZ1.jpg)
 
 ####DTLZ3 -First era and Final era
-
-Here we can see that 
+Below is the plot for DTLZ3 for the different number of objectives and decisions. We can see that GA works terribly to optimise 
+DLTZ 3 with 8 objectives and 10 decisions since the value for hypervolume is less than 1 in almost touching 0 in both the plots . 
+However we can note a discrepancy between the first and the last plot for 8 objectives and 20 and 40 decisions . We cannot judge 
+the performance of the optimizer using these values.
 
 ![alt tag](https://github.com/bhanuanand28/x9115222/blob/master/hw/code/9/ScreenShots/DTLZ3.jpg)
 
 ####DTLZ5 -First era and Final era
 
-Here we can see that 
+Below is the plot for DTLZ5 for the different number of objectives and decisions. We can see that GA works terribly to optimise 
+DLTZ 5 with 6,8 objectives and 10,20 decisions since the value for hypervolume is less than 1 in almost touching 0 in both the plots.
+The performance is the worst for 10,20 decisions and 8 objectives.
 
 ![alt tag](https://github.com/bhanuanand28/x9115222/blob/master/hw/code/9/ScreenShots/DTLZ5.jpg)
 
 ####DTLZ7 -First era and Final era
 
-Here we can see that 
+Below is the plot for DTLZ5 for the different number of objectives and decisions. We can see that GA works terribly to optimise 
+DLTZ 5 with 6,8 objectives and 10,20 decisions since the value for hypervolume is less than 1 in almost touching 0 in both the plots.
+The performance is the worst for 10,20 decisions and 8 objectives.
 
 ![alt tag](https://github.com/bhanuanand28/x9115222/blob/master/hw/code/9/ScreenShots/DTLZ7.jpg)
 

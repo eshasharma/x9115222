@@ -16,7 +16,7 @@ ________________________________________________________________________________
 
 ### Running Instructions 
   1. Clone the github repository x9115222 from git@github.com:bhanuanand28/x9115222.git
-  2. Navigate to ./x9115222/hw/code/9 
+  2. Navigate to ./x9115222/hw/code/10 
   3. run testGA.py
   
 ###Abstract

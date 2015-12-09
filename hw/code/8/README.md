@@ -1,15 +1,24 @@
 # x9115222
+
+# Repository for CS 591(Automated Software Engineering)
+
+Contributors:-
+
+  Bhanu Anand(bhanuanand28)
+  
+  Esha Sharma(eshasharma)
+  
+  Vinay Todalge (vntodalge)
+
+_____________________________________________________________________________________________________________________________
+
 ##Coding up the Type 1 , 2 , 3 Comparison Operators and Using them to Compare DE, SA and MWS 
 
-#####Group Members:
-
-- Esha Sharma 
-
-- Bhanu Anand
-
-- Vinay Togalde
-
 ### Running Instructions 
+  1. Clone the github repository x9115222 from git@github.com:bhanuanand28/x9115222.git
+  2. Navigate to ./x9115222/hw/code/10 
+  3. run generic_opt.py
+  
 
 ###Abstract
 In this study , we coded up the Type 1, Type 2 and Type 3 comparison operators and used them to find the final generations for 
@@ -65,10 +74,6 @@ graphs which we compared to judge performance of the optimizers.This is how thes
 ###Results
 a=0.56
 ![alt tag](https://github.com/bhanuanand28/x9115222/blob/master/hw/code/8/ScreenShot/Output.jpg)
-a=0.30
-![alt tag](https://github.com/bhanuanand28/x9115222/blob/master/hw/code/8/ScreenShot/op2%20.jpg)
-a=0.65
-![alt tag](https://github.com/bhanuanand28/x9115222/blob/master/hw/code/8/ScreenShot/op3.jpg)
 
 It can be observed from the graphs that DE works best on DTLZ 7 with 2 objectives followeed by SA, followed by MWS . In the graph we can 
 observe that Inter Quartile Range for DE is the best . This means that since the rdivdemo was run on loss values between inital and 

@@ -50,6 +50,18 @@ mutation_proba=0.05
 frontier_distributon - 0.8
 
 ###Results
+
+####DTLZ3 - before and after optimization
+
+![alt tag](https://github.com/bhanuanand28/x9115222/blob/master/hw/code/10/ScreenShots/DTLZ3.jpg)
+
+####DTLZ5 - before and after optimization
+
+![alt tag](https://github.com/bhanuanand28/x9115222/blob/master/hw/code/10/ScreenShots/DTLZ5.jpg)
+
+####DTLZ7 - before and after optimization
+
+![alt tag](https://github.com/bhanuanand28/x9115222/blob/master/hw/code/10/ScreenShots/DTLZ7.jpg)
 It can be observed from the graphs that GA wokrs best on
 
 

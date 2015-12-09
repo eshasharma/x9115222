@@ -45,22 +45,15 @@ It can be observed from the graphs that GA wokrs best on
 
 ###Threats to Validity 
 1. We ran the code only for 20 iterations . Running the code for a larger number of iterations may produce better statitics. 
-2. We used the loss value between generations to compute the graph . We could have used hypervolume or any other machinery to do this 
-comparison as well and based our results on the aggreagation of those results . 
-3. We used weights 1 for both objectives in the aggegation function . This could be evaluated with some other weights assigned 
-as well. 
-4. The inner loop in each optimiser was run just 1000 times , This could have been run more number of times . 
-5. The value of 0.56 seemed to be large . 
-
+2. We used the Hypervolume between generations to compute the graph . We could have used multiple other tools to calcuate the efficiency 
+as well . 
+3. We checked only for DTLZ . This could have been checked for multiple models. 
 
 ###Future Work 
 1. The code could be run for more number of iterations. 
-2. We could use hypervolume etc to generate more than 1 graph and affirm the results across these graphs . 
-3. The inner loop could be run more than 1000 times . 
-4. The weights could have been assigned by inputting the weights to an optimiser and deciding which produces best optimisation and 
-tuning our optimizer based on that . 
-5. We could use the value of 0.56 and tune our optimiser to that. 
-6. We could tun this for other optimisers like GA and see where DE stands in comparison.
-
+2. We could use hypervolume etc to generate more than 20 graphs and affirm the results across these graphs . 
+3. We could use functions other than hypervolume etc to compare efficiency. 
+4. We could vary the early termination conditions . 
+5. We could use GA to tune models other than DTLZ and check performance on those . 
 
 

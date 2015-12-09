@@ -50,6 +50,10 @@ these three operatore were applied :
 
 ![alt tag](https://github.com/bhanuanand28/x9115222/blob/master/hw/code/8/ScreenShot/Output.jpg)
 
+![alt tag](https://github.com/bhanuanand28/x9115222/blob/master/hw/code/8/ScreenShot/op2.jpg)
+
+![alt tag](https://github.com/bhanuanand28/x9115222/blob/master/hw/code/8/ScreenShot/op3.jpg)
+
 It can be observed from the graphs that DE works best on DTLZ 7 with 2 objectives followeed by SA, followed by MWS . In the graph we can 
 observe that Inter Quartile Range for DE is the best . This means that since the rdivdemo was run on loss values between inital and 
 final era , This sugests that DE produces the maximum difference between the first and last era. The loss improves from  0.85 to 1.00 

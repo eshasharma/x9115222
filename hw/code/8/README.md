@@ -92,6 +92,7 @@ DE produces the best loss between the first and final generations followed by SA
 
 
 ###Threats to Validity 
+
 1. We ran the code only for 20 iterations for each optimizer . Running the code for a larger number of iterations may produce better
 and more pronounced difference and better statistics. 
 2. We used the loss value between generations to compute the graph . We could have used hypervolume or spread to do this 
@@ -107,6 +108,7 @@ difference and we could have noted which optimizer was better even more clearly.
 based on this value. Decreasing this value could maybe decrease the number of times early termination could have occurred incorrectly.
 
 ###Future Work 
+
 1. The code could be run for more number of iterations so that the difference between the loss values for the different optimizers 
 is more pronounced. 
 2. We could use hypervolume or spread to generate an additional list of values. We can run our Scott Knott on these values as well 
@@ -119,12 +121,14 @@ the best value is used to decide whether we should do early termination or not.
 6. We could extend this study to Genetic Algorithms and other optimizers and check where DE stands in comparison.
 
 ###References
+
 1. https://github.com/txt/mase/blob/master/lessthan.md
 2. https://github.com/txt/mase/blob/master/STATS.md
 
 ###Acknowledgements
-The study uses code for Scott knott , Loss found here: 
-1.  https://github.com/txt/mase/blob/master/src/doc/sk.py
+
+The study uses code for Scott knott , Loss functions which can be found here: 
+ 1.  https://github.com/txt/mase/blob/master/src/doc/sk.py
 
 
 

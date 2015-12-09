@@ -12,26 +12,13 @@ Contributors:-
 
 _____________________________________________________________________________________________________________________________
 
-##Coding up the Type 1 , 2 , 3 Comparison Operators and Using them to Compare DE, SA and MWS 
+##Coding up the Gentic Algorithm 
 
 ### Running Instructions 
   1. Clone the github repository x9115222 from git@github.com:bhanuanand28/x9115222.git
   2. Navigate to ./x9115222/hw/code/9 
   3. run testGA.py
-  
-
-##Coding up the Gentic Algorithm 
-
-#####Group Members:
-
-- Esha Sharma 
-
-- Bhanu Anand
-
-- Vinay Togalde
-
-### Running Instructions 
-
+ 
 ###Abstract
 We have implemented a genetic algorithm . The genetic algorithm is then run on DTLZ 1 , 3, 5 , 7 each time with 2,4,6,8 objectives 
 and 10, 20 , 40 decisions. We run this model using the default parameters specified . The analysis of the Genetic Algorithm on 

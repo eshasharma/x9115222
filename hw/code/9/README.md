@@ -54,7 +54,9 @@ number of generations: 1000 (but have early termination considered every 100 gen
 frontier_distribution=0.8
 
 We implemented this algorithm : 
-1. Generate the initial paretopareto frontier initially . 
+1. Generate the initial Pareto Frontier by generating 100 candidates using the candidate function.
+2. Apply Binary Domination to generate Pareto_Best. This contains the best candidates generated via Binary Domination  and takes up n 
+   squared comparisons.
 2. Pareto best From the pareto frontier apply Binary domination and select parents . The number pf perants selected here will be betwen 3 to 4. 
 3. Create children from the parent population using crossover . Crossover is done only when probabality condition is met. 
 4. Mutate the childeren with proabality of 5 % . 

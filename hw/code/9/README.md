@@ -24,16 +24,37 @@ In this study, we have implemented a genetic algorithm .This genetic algorithm i
 2,4,6,8 objectives and each of 10, 20 , 40 decisions. We run this model using the default parameters without tuning those. The analysis
 of the application and performance of the Genetic Algorithm on different variations of DTLZ is done using the hypervolume function. 
 We measure the hypervolume for 20 iterations . We have then plotted the hypervoume using an excel spreadsheet. Through this experiment, 
-we learnt that the Genetic Algorithm performs best on  
+we learnt that the Genetic Algorithm performs best on  DTLZ7 with 6 and 8 objectives and the worst on DTLZ1 with 6 and 8 objectives 
+and DTLZ5 with 6 objectives.
 
 ###Introduction and Background
-To implement a Genetic Algorithm and run it on TLZ 1 , 3, 5 , 7 each time with 2,4,6,8 objectives and 10, 20 , 40 decisions.To 
-check and compare the performance of the Genetic Algorithm on the different parameters passed. 
-###Type 1 , Type 2 , Type 3 Comparison Operators
-###Genetic Algorithm used ###Implementation 
-Genetic algorithms are optimization algorithms which mimics the process of natural selection . In this program we did not used 
-the following algorithm which we implemented: 
-1. Generate the pareto frontier initially . 
+The objective of this study is to implement a genetic algorithm on DTLZ and check it's performance given different parameters for 
+the number of decisions and candidates. We use Binary Domination to compare different candidates and we generate the hypervolume 
+to check the performance of the Genetic Algorithm on the models given 
+
+##Genetic Algorithm
+A Genetic Algorithm is a optimization algorithm which mimics the process of natural selection. In a genetic algorithm we use selection 
+to generate the best population, we then use mutationa and crosssover with the default probabilty to generate children. The children
+are then compared to the parents to see if the population is getting evolved for better. Like natural selection , this process uses
+crossover, mutation and selection. 
+##Binary Domination and Continuous Domination 
+These are used to compare pairs of candidates to find the better candidate. The comparison is done on the objectives of the candidate 
+solutions. However for more number of objectives, Binary Domination works worse and leads to crowding of the frontier. However 
+Continuous Domination works better for more number of objectives and does not lead to crowding of the frontier as the difference
+between candidates is calculated on an exponential level. Hence intricate differences get noticed.
+
+###Implementation 
+We implemeted the Genetic Algorithm on DTLZ 1 , 3, 5 , 7 each time with 2,4,6,8 objectives and 10, 20 , 40 decisions. For this study 
+we used these values for the default parameters used to implement the Genetic Algorithm: 
+Probabilty for mutation: 0.05
+Probabilty for crossover: 0.98 
+number of lives: 5
+number of candidates: 100
+number of generations: 1000 (but have early termination considered every 100 generations)
+frontier_distribution=0.8
+
+We implemented this algorithm : 
+1. Generate the initial paretopareto frontier initially . 
 2. Pareto best From the pareto frontier apply Binary domination and select parents . The number pf perants selected here will be betwen 3 to 4. 
 3. Create children from the parent population using crossover . Crossover is done only when probabality condition is met. 
 4. Mutate the childeren with proabality of 5 % . 

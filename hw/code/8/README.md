@@ -35,9 +35,9 @@ We applied the Type 1 and Type 2 operators to our code for SA, MWS and DE and co
 20 times. These values were then compared using Type 3 statistical machinery via Scott Knott and graphs were generated. Thsi is how 
 these three operatore were applied : 
 1.  *Type 1 operator* : This was used to compare two candidates generated and decide which one was better . This was done in the inner
-most loop of each optimisers . To compare two candidates we computed the objectives generated for each candidate and aggregated them 
-by a simple summation . Since The Type 1 operator should take minimum time to run and also since for DTLZ 7 the objectives do not
-conflict , doing a summation seemed to be ok .
+       most loop of each optimisers . To compare two candidates we computed the objectives generated for each candidate and aggregated
+       them by a simple summation . Since The Type 1 operator should take minimum time to run and also since for DTLZ 7 the objectives 
+       do not conflict , doing a summation seemed to be ok .
 2. *Type 2 operator*: This was used to compare if the set of candidates generation in an era weer better than the candidates generated
 in the era before. To do this comparison , we used the a12 test and find the loss between the array of values generated in each era 
 with the array of values generate in its consequent era . This was used to apply early termination to the optimizer. We compared the

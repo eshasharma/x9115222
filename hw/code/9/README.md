@@ -78,3 +78,12 @@ as well .
 5. We could use GA to tune models other than DTLZ and check performance on those . 
 
 
+References
+
+    [Pseudo-Code for Genetic Algorithm](http://www.cleveralgorithms.com/nature-inspired/evolution/genetic_algorithm.html)
+    [Hypervolume Calculator](https://github.com/ai-se/storm/tree/master/PerformanceMetrics)
+ 
+
+
+
+

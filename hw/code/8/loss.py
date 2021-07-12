@@ -1,3 +1,4 @@
+# this code is from https://github.com/txt/mase/tree/master/src/doc
 import math
 import math
 import random

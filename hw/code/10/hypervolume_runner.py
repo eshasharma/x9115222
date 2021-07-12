@@ -1,3 +1,5 @@
+# from https://github.com/txt/mase/tree/master/src/doc
+
 from hypervolume import InnerHyperVolume
 
 class HyperVolumeContainer():

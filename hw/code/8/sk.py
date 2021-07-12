@@ -1,4 +1,4 @@
-
+# This code is from https://github.com/txt/mase/blob/master/src/doc/sk.py
 from __future__ import division
 import sys
 import random
